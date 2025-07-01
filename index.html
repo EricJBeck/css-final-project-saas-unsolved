@@ -1,10 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Saas company</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="front-logo">
+        <img src="./assets/logos/logo-front.svg" alt="front logo">
+      </div>
+      <nav class="links">
+        <ul>
+          <li class="home">
+            <a href="./#">Home</a>
+          </li>
+          <li class="features">
+            <a href="./#">Features</a>
+          </li>
+          <li class="learn">
+            <a href="./#">Learn</a>
+          </li>
+          <li class="pricing">
+            <a href="./#">Pricing</a>
+          </li>
+          <li class="hire-us">
+            <a href="./#">Hire us</a>
+          </li>
+        </ul>
+        <button class="buy-now">Buy Now</button>
+      </nav>
+    </header>
+    <main>
+      <div class="top">
+        <div class="top-info">
+          <h1>Empowering teams with the freedom</h1>
+          <p>Own the unlimited power of the web development</p>
+          <button class="play-video">Play Video</button>
+          <span>Learn more</span>
+        </div>
+        <div class="logos">
+          <img src="./assets/logos/google.png" alt="Google logo">
+          <img src="./assets/logos/atlassian.png" alt="Atlassian logo">
+          <img src="./assets/logos/asana.png" alt="Asana logo">
+          <img src="./assets/logos/paypal.jpg" alt="Paypal logo">
+          <img src="./assets/logos/weave.png" alt="Weave logo">
+          <img src="./assets/logos/google-ads.png" alt="Google ads logo">
+          <img src="./assets/logos/calendar.png" alt="Calendar logo">
+        </div>
+      </div>
+      <div class="why-front">
+        <div class="why-info">
+          <h2>Why front?</h2>
+          <p>Front is an incredibly beautiful, fully responsive, and mobile-first projects on
+            the web - it is the starting point for creative sites
+          </p>
+        </div>
+        <div class="why-components">
+          <ol>  
+            <li>Basic elements</li>
+            <li>Components</li>
+            <li>Combined Components</li>
+            <li>page layouts</li>
+          </ol>
+        </div>
+      </div>
+      <div class="pricing">
+        <div class="pricing-header">
+          <h2>Pricing</h2>
+          <p>No additional costs. Pay for what you use</p>
+        </div>
+        <div class="pricing-components">
+          <div class="price">
+            <p><b>59</b>/mo</p>
+            <div class="line"></div>
+            <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
+            <button class="play-video">Play Video</button>
+            <h6>No credit card required</h6>
+          </div>
+          <div class="guarantees">
+            <div class="guarantee">
+              <img src="./assets/images/components.svg" alt="puzzle pieces">
+              <h3>Hundreds of components</h3>
+              <p>Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
+            </div>
+            <div class="guarantee">
+              <img src="./assets/images/images.svg" alt="Diamond">
+              <h3>Images included</h3>
+              <p>Images included. We made custom licenses for all of our premium images in the front</p>
+            </div>
+            <div class="guarantee">
+              <img src="./assets/images/cancel.svg" alt="sales tag">
+              <h3>Cancel anytime <span class="sketch">sketch</span></h3>
+              <p>if it is not for you, just cancel, no hidden costs or fees.</p>
+            </div>
+            <div class="guarantee">
+              <img src="./assets/images/moneyback.svg" alt="a hand with a money bag in it">
+              <h3>Money back</h3>
+              <p>100% guaranteed money back. No questions asked.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hire">
+        <div class="hire-us">
+          <h2>Hire us</h2>
+          <p>Whatever your goal - we will get you there</p>
+          <div class="line"></div>
+          <q>I love Front! I love the ease of use, I love the fact that i have total creative freedom...></q>
+          <h3>Charlotte Moore</h3>
+          <p>Head of Commercials, Slack</p>
+          <img src="./assets/images/man_one.jpg" alt="Profile picture of a man">
+        </div>
+        <div class="form">
+          <form action="./#" method="get" class="form">
+            <div class="form">
+              <h3>Fill out the form and we'll be in touch as soon as possible</h3>
+              <input type="text" name="firstName" id="firstName" placeholder="First name">
+              <input type="text" name="lastName" id="lastName" placeholder="Last name">
+              <input type="email" name="email" id="email" placeholder="Email">
+              <div class="select-wrap">
+                <label for="budget-select">Budget</label>
+                <select name="budget" id="budget-select">
+                  <option value="default" disabled selected>please select</option>
+                  <option value="under30k">Less than 30K</option>
+                  <option value="30to60k">30K to 60K</option>
+                  <option value="60to100k">60K to 100K</option>
+                  <option value="100to500k">100K to 500K</option>
+                  <option value="500kto1m">500K to 1M</option>
+                  <option value="over1m">greater than 1 M</option>
+                </select>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                  <option value="default" disabled selected>please select</option>
+                  <option value="usa">USA</option>
+                  <option value="germany">Germany</option>
+                  <option value="ireland">Ireland</option>
+                  <option value="norway">Norway</option>
+                  <option value="mexico">Mexico</option>
+                  <option value="scotland">Scotland</option>
+                </select>
+              </div>
+              <textarea 
+                placeholder="Tell us more about your project, needs, and timeline, please..."                 
+                name="project-details" 
+                id="project-details"
+                rows="10"
+                cols="20"
+              ></textarea>
+              <div class="checkbox">
+                <input type="checkbox" id="request" name="request">
+                <label for="request">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
+              </div>
+              <div class="privacy">
+                <a href="./#" class="one">View privacy policy</a>
+                <a href="./#" class="two">View privacy policy</a>
+              </div>
+                <button type="submit" class="submit">Get started</button>
+            </div>
+          </form> 
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+        <img src="./assets/logos/logo-front.svg" alt="front logo">
+        <p>153 Williamson Plaza, Maggieberg</p>
+        <p>+1(062)109-9222</p>
+      </div>
+      <div class="company">
+        <p>About</p>
+        <p>Career <span>We're hiring</span></p>
+        <p>Blog</p>
+        <p>Customers</p>
+        <p>Hire us</p>
+      </div>
+      <div class="features">
+        <p>Press</p>
+        <p>Release notes</p>
+        <p>Integrations</p>
+        <p>Pricing</p>
+      </div>
+      <div class="documentation">
+        <p>Support</p>
+        <p>Docs</p>
+        <p>Status</p>
+        <p>API Reference</p>
+        <p>Tech Requirements</p>
+      </div>
+      <div class="resources">
+        <h3>Resources</h3>
+        <div class="help">
+          <p>Help</p>
+        </div>
+        <div class="account">
+          <p>Your Account</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
