@@ -25,7 +25,7 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 `General`
 
-- [ ] The layout of the submitted project must match the Figma mockups as closely as possible (100% match) for all three screen sizes: desktop, tablet, and mobile.
+- [X] The layout of the submitted project must match the Figma mockups as closely as possible (100% match) for all three screen sizes: desktop, tablet, and mobile.
 - [X] The project initially includes a single CSS file, but you can use multiple files if needed. Ensure that styles are not duplicated across these files.
 - [X] You can use any fonts you prefer, such as standard library sans-serif fonts or sans-serif web fonts.
 - [X] The screenshots of the solved version of that project are located in `/assets/screenshots/`.
@@ -36,8 +36,8 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 `Desktop specific`
 
-- [ ] Transitions and keyframe animations should be functional for desktop devices only.
-- [ ] The icons in the top section must appear with animations. Use at least two different animations or animation directions.
+- [X] Transitions and keyframe animations should be functional for desktop devices only.
+- [X] The icons in the top section must appear with animations. Use at least two different animations or animation directions.
 - [X] The following items must include hover animations:
 
   - [X] Top navigation items

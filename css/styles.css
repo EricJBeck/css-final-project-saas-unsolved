@@ -2,20 +2,12 @@
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px;
+    padding: 5px;
 }
 
 p {margin: 0;}
 
-.header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.front-logo {
-    display: flex;
-    flex: 1;
-}
+.front-logo > img { height: 60px;}
 
 a:link {
     color: grey;
@@ -28,6 +20,7 @@ a:link {
 a:hover {
     color: dodgerblue;
     text-decoration: none;
+    width: 70px;
 }
 
 .navbar ul {
@@ -44,11 +37,20 @@ a:hover {
 	font-size: 20px;
 	display: block;
 	text-align: center;
+    width: 70px;
 }
 
 [aria-controls="nav-list"] {display: none;}
 
-button {
+.header {display: flex;}
+
+.front-logo {flex: 3;}
+
+.space {flex: auto;}
+
+.bar {flex: 4;}
+
+.button {
     width: 100px;
     height: 40px;
     border-radius: 30px;
@@ -56,7 +58,7 @@ button {
     color: white;
 }
 
-button:hover {
+.button:hover {
     background-color: white;
     color: dodgerblue;
 }
@@ -287,7 +289,7 @@ button:hover {
 .guarantee {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     gap: 15px;
 }
 
@@ -307,8 +309,6 @@ button:hover {
     align-items: flex-start;
     height: 50px;
     width: 50px;
-    gap: 0;
-    padding: 0;
 }
 
 .hire {
@@ -400,7 +400,7 @@ button:hover {
 }
 
 .footer-info > img {
-    width: 100px;
+    width: 90px;
 }
 
 .footer-info > h2 {
@@ -440,14 +440,7 @@ button:hover {
 
 /* Transition code below*/
 
-a:link,
-button,
-.play-video,
-.submit,
-.privacy > a,
-.footer-info > a,
-.help > a,
-.account > a {
+.transition {
     transition: all 2s ease-in-out 2s;
 }
 
@@ -455,8 +448,7 @@ button,
 
 @keyframes up {
     0% {
-        top: 100%;
-        
+        top: 100%; 
     }
     50%  {
         top: 50%;
@@ -528,50 +520,61 @@ button,
     .front-logo {flex: auto;}
 
     .space {flex: 0px;}
-    
+
     .bar {
-        flex: 3;
+        flex: 1;
         justify-content: flex-end;
         text-align: right;
+        width: 25%;
     }
 
     .navbar {
-	    order: -1;
-	    perspective: 800px;
+		order: -1;
+		perspective: 800px;
+	}
+
+	.navbar ul {
+		max-height: 0;
+		overflow: hidden;
+		transform: rotateX(90deg);
+		transition: all 0.5s;
+	}
+
+    .nav {
+        border: none;
     }
 
-    .navbar ul {
-	    max-height: 0;
-	    overflow: hidden;
-	    transform: rotateX(90deg);
-	    transition: all 0.5s;
+    .nav-list {
     }
 
-    [aria-controls="nav-list"] {
-	    display: block;
-	    margin-bottom: 10px;
-    }
+	[aria-controls="nav-list"] {
+		display: block;
+		margin-bottom: 10px;
+	}
 
-    [aria-expanded="true"] ~ ul {
-	    display: grid;
-	    max-height: 500px;
-	    transform: rotateX(0);
-    }   
+	[aria-expanded="true"] ~ ul {
+        display: flex;
+        flex-direction: column;
+		max-height: 500px;
+		transform: rotateX(0);
+	}
 
-    [aria-expanded="false"] .close {
-	    display: none;
-    }
+	[aria-expanded="false"] .close {
+		display: none;
+	}
 
-    [aria-expanded="true"] .close {
-	    display: inline-block;
-    }
+	[aria-expanded="true"] .close {
+		display: inline-block;
+	}
 
-    [aria-expanded="true"] .open {
-	    display: none;
-    }
+	[aria-expanded="true"] .open {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 767px) {
+
+    .footer {text-align: center;}
 
 }
 
