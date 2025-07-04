@@ -1,3 +1,181 @@
+* {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+
+p {margin: 0;}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.front-logo {
+    display: flex;
+    flex: 1;
+}
+
+a:link {
+    color: grey;
+    text-decoration: none;
+}
+
+.footer-info > a:hover,
+.help > a:hover,
+.account > a:hover,
+a:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.navbar ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+	list-style: none;
+	grid-gap: 10px;
+    width: 525px;
+}
+
+.navbar a {
+	text-decoration: none;
+	padding: 10px;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+}
+
+[aria-controls="nav-list"] {display: none;}
+
+button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+.header {display: flex;}
+
+.title {flex: 4;}
+
+.space {flex: auto;}
+
+.bar {
+    flex: 3;
+    flex-wrap: nowrap;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    height: 600px;
+}
+
+.top-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
+}
+
+.top-info > h1 {
+    font-size: 3rem;
+}
+
+.top-info > p {
+    font-size: medium;
+    color: grey;
+}
+
+.bottom-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-video,
+.submit {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 120px;
+    font-size: medium;
+}
+
+.logos {
+    /*display: flex;
+    flex: 2;*/
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.google {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.one {
+    position: relative;
+    left: 15%;
+}
+
+.two {
+    position: relative;
+    left: 30%;
+    top: 8%;
+}
+
+.three {
+    position: relative;
+    left: 60%;
+    top: 8%;
+}
+
+.four {
+    position: relative;
+    top:50%;
+    right: 18%;
+}
+
+.five {
+    position: relative;
+    top: 48%;
+    left: 10%;
+
+}
+
+.six {
+    position: relative;
+    top: 70%;
+    right: 20%;
+}
+
+.seven {
+    position: relative;
+    top: 80%;
+    right: -15%;
+}
 
 .line {
     border-bottom: 5px solid grey;
@@ -5,4 +183,316 @@
     width: 90%;
 }
 
+.why-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.why-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 63%;
+}
+
+.why-info > p {
+    display: flex;
+    text-align: center;
+}
+
+.why-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.why-components > ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.why-components > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.why-components > ul > li:before {
+    content:"•";
+    vertical-align: middle;
+    position: relative;
+    display: list-item;
+    color: dodgerblue;
+    font-size: 20px;
+    /*width: 20px;
+    height: 20px;*/
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px white, 0 0 5px dodgerblue;
+}
+
+.pricing {
+    height: 692px;
+}
+
+.pricing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-components {
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    gap: 30px;
+    color: grey;
+    padding-left: 5%;
+}
+
+.price > p > span {
+    font-size: 5rem;
+    font-weight: 900;
+    color: black;
+} 
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.credit > p {
+    font-size: x-small;
+    padding: 15px;
+}
+
+.guarantees {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    flex: 2;
+    padding: 15px 30px;
+    margin-top: 30px;
+}
+
+.guarantee {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 15px;
+}
+
+.sketch {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(105, 206, 110);
+    color: white;
+    font-size: xx-small;
+    padding: 2px;
+}
+
+.guarantee > img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
+    width: 50px;
+    gap: 0;
+    padding: 0;
+}
+
+.hire {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+.hire-us,
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.hire-us { 
+    color: white;
+    padding-left: 100px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hire-us > h2 {
+    font-size: xx-large;
+}
+
+.hire-us > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.form {
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.name {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.form > input,
+.form > .select-wrap > select,
+.form > textarea,
+.name {
+    border-style: none;
+    padding: 10px 0;
+}
+
+.submit {
+    position:relative;
+    left: 40%;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.form > .checkbox > input {
+    opacity: 0;
+    padding-right: 30px;
+}
+
+.checkbox > label {
+    position: relative;
+    left: 15%;
+    width: 75%;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-info > img {
+    width: 100px;
+}
+
+.footer-info > h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-info > p,
+.footer-info > a,
+.help > a,
+.account > a {
+    color: grey;
+    font-size: small;
+}
+
+.footer-info > p > i,
+.footer-info > a > i,
+.help > a > i,
+.account > a > i {
+    padding-right: 10px;
+    font-size: small;
+}
+
+.hiring {
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: xx-small;
+    padding: 2px;
+}
+
+.price:hover {
+    box-shadow: 10px 10px grey;
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .front-logo {flex: auto;}
+
+    .space {flex: 0px;}
+    
+    .bar {
+        flex: 3;
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .navbar {
+	    order: -1;
+	    perspective: 800px;
+    }
+
+    .navbar ul {
+	    max-height: 0;
+	    overflow: hidden;
+	    transform: rotateX(90deg);
+	    transition: all 0.5s;
+    }
+
+    [aria-controls="nav-list"] {
+	    display: block;
+	    margin-bottom: 10px;
+    }
+
+    [aria-expanded="true"] ~ ul {
+	    display: grid;
+	    max-height: 500px;
+	    transform: rotateX(0);
+    }   
+
+    [aria-expanded="false"] .close {
+	    display: none;
+    }
+
+    [aria-expanded="true"] .close {
+	    display: inline-block;
+    }
+
+    [aria-expanded="true"] .open {
+	    display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 600px) { 
+    .copyright {font-size: 10px;}
+}

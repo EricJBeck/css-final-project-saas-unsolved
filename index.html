@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/737c8226b5.js" crossorigin="anonymous"></script>
     <title>Saas company</title>
   </head>
   <body>
@@ -11,43 +12,55 @@
       <div class="front-logo">
         <img src="./assets/logos/logo-front.svg" alt="front logo">
       </div>
-      <nav class="links">
-        <ul>
-          <li class="home">
-            <a href="./#">Home</a>
-          </li>
-          <li class="features">
-            <a href="./#">Features</a>
-          </li>
-          <li class="learn">
-            <a href="./#">Learn</a>
-          </li>
-          <li class="pricing">
-            <a href="./#">Pricing</a>
-          </li>
-          <li class="hire-us">
-            <a href="./#">Hire us</a>
-          </li>
-        </ul>
-        <button class="buy-now">Buy Now</button>
-      </nav>
+      <div class="space"></div>
+      <div class="bar">
+        <nav class="navbar">
+          <button aria-expanded="false" aria-controls="nav-list">
+            <span class="open">&#x2630;</span>
+            <span class="close">&times;</span>
+          </button>
+          <ul id="nav-list">
+            <li>
+              <a href="./#">Home</a>
+            </li>
+            <li>
+              <a href="./#" class="features">Features</a>
+            </li>
+            <li>
+              <a href="./#">Learn</a>
+            </li>
+            <li>
+              <a href="./#">Pricing</a>
+            </li>
+            <li>
+              <a href="./#">Hire us</a>
+            </li>
+            <li>
+              <button class="buy-now">Buy Now</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <div class="top">
+      <div class="top" style="background-image: url(./assets/bg/background-top.svg);">
+
         <div class="top-info">
           <h1>Empowering teams with the freedom</h1>
           <p>Own the unlimited power of the web development</p>
-          <button class="play-video">Play Video</button>
-          <span>Learn more</span>
+          <div class="bottom-info">
+            <button class="play-video"><i class="fa-solid fa-circle-play"></i>Play Video</button>
+            <a href="./#">Learn more</a>
+          </div>
         </div>
         <div class="logos">
-          <img src="./assets/logos/google.png" alt="Google logo">
-          <img src="./assets/logos/atlassian.png" alt="Atlassian logo">
-          <img src="./assets/logos/asana.png" alt="Asana logo">
-          <img src="./assets/logos/paypal.jpg" alt="Paypal logo">
-          <img src="./assets/logos/weave.png" alt="Weave logo">
-          <img src="./assets/logos/google-ads.png" alt="Google ads logo">
-          <img src="./assets/logos/calendar.png" alt="Calendar logo">
+          <img src="./assets/logos/google.png" alt="Google logo" class="google one">
+          <img src="./assets/logos/atlassian.png" alt="Atlassian logo" class="logo two">
+          <img src="./assets/logos/asana.png" alt="Asana logo" class="logo three">
+          <img src="./assets/logos/paypal.jpg" alt="Paypal logo" class="logo four">
+          <img src="./assets/logos/weave.png" alt="Weave logo" class="logo five">
+          <img src="./assets/logos/google-ads.png" alt="Google ads logo" class="google six">
+          <img src="./assets/logos/calendar.png" alt="Calendar logo" class="logo seven">
         </div>
       </div>
       <div class="why-front">
@@ -58,12 +71,12 @@
           </p>
         </div>
         <div class="why-components">
-          <ol>  
+          <ul>  
             <li>Basic elements</li>
             <li>Components</li>
             <li>Combined Components</li>
-            <li>page layouts</li>
-          </ol>
+            <li>Page layouts</li>
+          </ul>
         </div>
       </div>
       <div class="pricing">
@@ -73,11 +86,13 @@
         </div>
         <div class="pricing-components">
           <div class="price">
-            <p><b>59</b>/mo</p>
+            <p><span>59</span>/mo</p>
             <div class="line"></div>
             <p>Start your Front business now. 100% guaranteed money back. No questions asked.</p>
-            <button class="play-video">Play Video</button>
-            <h6>No credit card required</h6>
+            <div class="credit">
+              <button class="play-video"><i class="fa-solid fa-circle-play"></i>Play Video</button>
+              <p>No credit card required</p>
+            </div>
           </div>
           <div class="guarantees">
             <div class="guarantee">
@@ -109,21 +124,25 @@
           <p>Whatever your goal - we will get you there</p>
           <div class="line"></div>
           <q>I love Front! I love the ease of use, I love the fact that i have total creative freedom...></q>
-          <h3>Charlotte Moore</h3>
-          <p>Head of Commercials, Slack</p>
+          <div>
+            <h3>Charlotte Moore</h3>
+            <p>Head of Commercials, Slack</p>
+          </div>
           <img src="./assets/images/man_one.jpg" alt="Profile picture of a man">
         </div>
-        <div class="form">
+        <div>
           <form action="./#" method="get" class="form">
             <div class="form">
               <h3>Fill out the form and we'll be in touch as soon as possible</h3>
-              <input type="text" name="firstName" id="firstName" placeholder="First name">
-              <input type="text" name="lastName" id="lastName" placeholder="Last name">
+              <div class="name">
+                <input type="text" name="firstName" id="firstName" placeholder="First name" class="name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last name" class="name">
+              </div>
               <input type="email" name="email" id="email" placeholder="Email">
               <div class="select-wrap">
                 <label for="budget-select">Budget</label>
                 <select name="budget" id="budget-select">
-                  <option value="default" disabled selected>please select</option>
+                  <option value="default" disabled selected> </option>
                   <option value="under30k">Less than 30K</option>
                   <option value="30to60k">30K to 60K</option>
                   <option value="60to100k">60K to 100K</option>
@@ -133,7 +152,7 @@
                 </select>
                 <label for="country">Country</label>
                 <select name="country" id="country">
-                  <option value="default" disabled selected>please select</option>
+                  <option value="default" disabled selected>            </option>
                   <option value="usa">USA</option>
                   <option value="germany">Germany</option>
                   <option value="ireland">Ireland</option>
@@ -163,40 +182,55 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <div>
+    <script>
+      const navButton = document.querySelector('button[aria-expanded]');
+    
+      function toggleNav({ target }) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+    
+      navButton.addEventListener('click', toggleNav);
+    </script>
+    <footer>
+      <div class="footer">
+      <div class="footer-info">
         <img src="./assets/logos/logo-front.svg" alt="front logo">
-        <p>153 Williamson Plaza, Maggieberg</p>
-        <p>+1(062)109-9222</p>
+        <p><i class="fa-solid fa-location-arrow"></i>153 Williamson Plaza, Maggieberg</p>
+        <a href="1(062)109-9222"><i class="fa-solid fa-phone"></i>+1(062)109-9222</a>
       </div>
-      <div class="company">
-        <p>About</p>
-        <p>Career <span>We're hiring</span></p>
-        <p>Blog</p>
-        <p>Customers</p>
-        <p>Hire us</p>
+      <div class="footer-info">
+        <h2>Company</h2>
+        <a href="./#">About</a>
+        <a href="./#">Career <span class="hiring">We're hiring</span></a>
+        <a href="./#">Blog</a>
+        <a href="./#">Customers</a>
+        <a href="./#">Hire us</a>
       </div>
-      <div class="features">
-        <p>Press</p>
-        <p>Release notes</p>
-        <p>Integrations</p>
-        <p>Pricing</p>
+      <div class="footer-info">
+        <h2>Features</h2>
+        <a href="./#">Press</a>
+        <a href="./#">Release notes</a>
+        <a href="./#">Integrations</a>
+        <a href="./#">Pricing</a>
       </div>
-      <div class="documentation">
-        <p>Support</p>
-        <p>Docs</p>
-        <p>Status</p>
-        <p>API Reference</p>
-        <p>Tech Requirements</p>
+      <div class="footer-info">
+        <h2>Documentation</h2>
+        <a href="./#">Support</a>
+        <a href="./#">Docs</a>
+        <a href="./#">Status</a>
+        <a href="./#">API Reference</a>
+        <a href="./#">Tech Requirements</a>
       </div>
-      <div class="resources">
-        <h3>Resources</h3>
+      <div class="footer-info">
+        <h2>Resources</h2>
         <div class="help">
-          <p>Help</p>
+          <a href="./#"><i class="fa-solid fa-circle-info"></i>Help</a>
         </div>
         <div class="account">
-          <p>Your Account</p>
+          <a href="./#"><i class="fa-solid fa-circle-user"></i>Your Account</a>
         </div>
+      </div>
       </div>
     </footer>
   </body>
