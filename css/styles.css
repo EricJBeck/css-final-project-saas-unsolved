@@ -114,8 +114,6 @@ button:hover {
 }
 
 .logos {
-    /*display: flex;
-    flex: 2;*/
     width: 100%;
     height: 600px;
     padding: 10px;
@@ -231,8 +229,6 @@ button:hover {
     display: list-item;
     color: dodgerblue;
     font-size: 20px;
-    /*width: 20px;
-    height: 20px;*/
     border-radius: 50%;
     box-shadow: 1px 1px 2px white, 0 0 5px dodgerblue;
 }
@@ -387,6 +383,7 @@ button:hover {
 .privacy {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -440,6 +437,91 @@ button:hover {
 .price:hover {
     box-shadow: 10px 10px grey;
 }
+
+/* Transition code below*/
+
+a:link,
+button,
+.play-video,
+.submit,
+.privacy > a,
+.footer-info > a,
+.help > a,
+.account > a {
+    transition: all 2s ease-in-out 2s;
+}
+
+.up {animation: up 5s linear;}
+
+@keyframes up {
+    0% {
+        top: 100%;
+        
+    }
+    50%  {
+        top: 50%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+.right {animation: right 5s linear;}
+
+@keyframes right {
+    0% {
+        left: 100%
+    }
+    50% {
+        left: 50%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.down { animation: down 3s linear;}
+
+@keyframes down {
+    0% {
+        top: 0%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 80%;
+    }
+}
+
+.left {animation: left 2s linear;}
+
+@keyframes left {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 30%;
+    }
+    100% {
+        left: 60%;
+    }
+}
+
+.dia { animation: sideways 4s linear;}
+
+@keyframes sideways {
+    0% {
+        top: 100%;
+        left: 100%;
+    }
+    100% {
+        top: 30%;
+        left: 0%
+    }
+}
+
+/* Media sizing code below*/
 
 @media screen and (max-width: 1023px) {
     

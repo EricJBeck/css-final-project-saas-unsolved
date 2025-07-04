@@ -38,11 +38,11 @@ Please visit the [project mockups page](https://www.figma.com/design/Ou3rfktmwkX
 
 - [ ] Transitions and keyframe animations should be functional for desktop devices only.
 - [ ] The icons in the top section must appear with animations. Use at least two different animations or animation directions.
-- [ ] The following items must include hover animations:
+- [X] The following items must include hover animations:
 
   - [X] Top navigation items
   - [X] All buttons (e.g., buy, play, form submit) (use the inverse colors for the border, background, text color and the icon color for the hovered state)
-  - [ ] The main price box in the "Pricing" section (add the shadow around the box for the hovered state)
+  - [X] The main price box in the "Pricing" section (add the shadow around the box for the hovered state)
   - [X] Bottom navigation items
   - [X] "View privacy policy" link in the form
 
